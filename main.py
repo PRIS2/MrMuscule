@@ -26,4 +26,22 @@ print('Complex number phase using math.atan2() =', math.atan2(2, 1))
 Phase in Degrees = 45.0
 -4-4j Phase = -2.356194490192345 radians. Degrees = -135.0
 Complex number phase using math.atan2() = 1.1071487177940904
-print "Ola"
+
+z=3+2j
+z.real
+z=3+2j
+z.imag
+z1 = 2 + 3j
+z2 = 4 + 5j
+z1 * z2
+z1 = 2 + 3j
+z2 = 4 + 5j
+z1 / z2
+algebraic = 3 + 2j
+geometric = complex(3, 2)
+radius, angle = cmath.polar(algebraic)
+trigonometric = radius * (cmath.cos(angle) + 1j*cmath.sin(angle))
+exponential = radius * cmath.exp(1j*angle)
+
+for number in algebraic, geometric, trigonometric, exponential:
+  print(format(number, "g"))
